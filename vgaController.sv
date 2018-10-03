@@ -40,7 +40,7 @@
 	comparator#(10) vDisplayStartComparator(.a(vCnt), .b(VSS), .gte(vDS));
 	comparator#(10) vDisplayEndComparator(.a(vCnt), .b(VSE), .lt(vDE));
 	
-	assign o_sync_n = 1'b0; //o_hs & o_vs;
+	assign o_sync_n = 1;//o_hs & o_vs;
 	
 	assign o_blank_n = hDS & hDE & vDS & vDE;
 	

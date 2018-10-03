@@ -7,9 +7,8 @@ module ColorFSM(input logic go, clk, reset, output logic WE1,WE2,WE3,WE4);
 	state current, next;
 	always_ff @(posedge clk)
 	begin
-		if (reset) current <= a;
+		if (reset)current <= a;
 		else current <= next;
-	
 	end
 	
 	
